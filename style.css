@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Top navigation bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.top-bar h1 {
+    margin: 0;
+    color: #222;
+    font-size: 28px;
+}
+
+/* Centered container for login/register pages */
+.container {
+    width: 350px;
+    margin: 80px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input styling */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+    padding: 12px 18px;
+    margin: 8px 4px;
+    border: none;
+    border-radius: 8px;
+    background: #0095f6;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0077cc;
+}
+
+/* Feed grid like shopping/gallery page */
+.feed-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+/* Item cards */
+.card {
+    background: white;
+    border-radius: 14px;
+    padding: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.card h3 {
+    margin-top: 12px;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Uploaded images */
+.item-image {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Upload page */
+.upload-container {
+    width: 450px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* File input */
+input[type="file"] {
+    border: none;
+    padding: 10px 0;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+/* Mobile responsive */
+@media (max-width: 900px) {
+    .feed-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .feed-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container,
+    .upload-container {
+        width: 90%;
+    }
+}
